@@ -1,0 +1,51 @@
+SELECT * FROM OrderDetail
+WHERE Discount IS NULL;
+
+SELECT * FROM Category
+WHERE CategoryName IS NULL;
+
+
+--------------------------------CUSTOMER---------------FECHAS NO COINCIDEN CON LAS DEMAS----------------------------------------------
+SELECT * FROM Customer;
+
+SELECT DISTINCT Address,City,Region,PostalCode FROM Customer
+WHERE Discount IS NULL;
+
+---------------------------------------------------------------------------------------------
+SELECT * FROM CustomerCustomerDemo
+WHERE Discount IS NULL;
+
+SELECT * FROM CustomerDemographic
+WHERE Discount IS NULL;
+
+SELECT * FROM Employee
+WHERE Photo IS NULL;
+SELECT * FROM EmployeeTerritory
+WHERE Discount IS NULL;
+
+---------------------------------------------ORDER----=> LOCATION------------------------------------------------------------
+
+SELECT DISTINCT ShipAddress,ShipCity,ShipCountry,ShipRegion,ShipPostalCode FROM "Order"
+WHERE ShippedDate IS NULL;
+---------------------------------------------------------------------------------------------------------------
+
+SELECT * FROM OrderDetail
+WHERE Discount IS NULL;
+SELECT * FROM Product
+WHERE Discontinued IS NULL;
+SELECT * FROM Region
+WHERE Discount IS NULL;
+
+SELECT * FROM Shipper
+WHERE Discount IS NULL;
+
+SELECT DISTINCT Address, City, Region, PostalCode FROM Supplier
+WHERE HomePage IS NULL;
+
+SELECT * FROM Territory
+WHERE Discount IS NULL;
+
+SELECT * FROM Region
+WHERE Discount IS NULL;
+
+select * from ProductDetails_V;
